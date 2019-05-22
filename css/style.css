@@ -46,15 +46,24 @@ text-align: center;
 .section-title p{
 	opacity: .7;
 }
+.sub-section-title{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+	color: #545454;
+	border-bottom: 1px solid #545454;
+	margin-bottom: 20px;
+	font-weight: bold;
+	padding: 5px;
+}
 header .header-bar{
 	color: white;
-	background: #f96731;
+	background: #545454;
 	width: 100%;
 	height: 50px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: .9em;
-	font-weight: bold;
 	line-height: 50px;
+	text-transform: uppercase;
 	letter-spacing: 1px;
 }
 header .header-bar .header-bar-content .profile-info{
@@ -136,6 +145,19 @@ header nav .nav-content .nav-links ul li:hover::before{
 	background: #f96731;
 	transition: ease-in-out .2s;
 }
+header nav .nav-content .nav-links .login-btn{
+	font-family: 'Montserrat', sans-serif;
+	font-size: .8em;
+	background: #f96731;
+	letter-spacing: 1px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 10px 30px;
+	margin-left: 40px;
+	border-radius: 20px;
+	cursor: pointer;
+}
 header .slider{
 	position: relative;
 	width: 100%;
@@ -180,6 +202,49 @@ header .slider img{
 }
 .amenities .amenities-content .amenities-modules .amenities-block .amenities-info span{
 	line-height: 20px;
+}
+.documents{
+	width: 100%;
+	padding: 50px 0;
+}
+.documents .documents-content .pdf-doc{
+	margin-bottom: 40px;
+}
+.documents .documents-content .pdf-doc .pdf-files{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.documents .documents-content .pdf-doc .pdf-files div{
+	font-size: .9em;
+	display: flex;
+	align-items: center;
+}
+.documents .documents-content .pdf-doc .pdf-files div i:before{
+	font-size: 2em;
+}
+.documents .documents-content .pdf-doc .pdf-files div p{
+	font-size: 1.1em;
+	margin-left: 10px;
+}
+.documents .documents-content .pdf-doc .pdf-files .download-btn{
+	font-family: 'Montserrat', sans-serif;
+	font-size: .7em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+}.documents .documents-content .pdf-doc .pdf-files .download-btn a{
+	color: #545454;
+	text-decoration: none;
+}
+.documents .documents-content .pdf-doc .pdf-files .download-btn:hover{
+	color: #f96731;
+}
+.documents .documents-content .pdf-doc .pdf-files .download-btn:hover a{
+	text-decoration: underline;
+	color: #f96731
 }
 .contact{
 	width: 100%;
@@ -256,6 +321,9 @@ header .slider img{
 	background: white;
 	color: #545454;
 }
+.contact .contact-content .map{
+	margin-bottom: 50px;
+}
 footer{
 	width: 100%;
 	height: 80px;
@@ -273,7 +341,7 @@ footer .footer-copyright a{
 }
 footer .footer-copyright a:hover{
 	text-decoration: underline;
-	color: #f73838;
+	color: #f96731;
 }
 footer .footer-copyright p{
 	margin-bottom: 8px;
@@ -292,6 +360,9 @@ footer .footer-copyright span{
 		text-align: center;
 	}
 	.nav-links{
+		display: none;
+	}
+	header .header-bar{
 		display: none;
 	}
 	header .slider{

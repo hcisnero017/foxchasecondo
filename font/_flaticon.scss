@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 14/05/2019 16:37
+    Creation date: 22/05/2019 22:16
     */
 
     @font-face {
@@ -44,6 +44,8 @@
 .flaticon-smartphone-call:before { content: "\f104"; }
 .flaticon-man-user:before { content: "\f105"; }
 .flaticon-logout:before { content: "\f106"; }
+.flaticon-pdf-file-format-symbol:before { content: "\f107"; }
+.flaticon-download:before { content: "\f108"; }
     
     $font-Flaticon-menu: "\f100";
     $font-Flaticon-cancel: "\f101";
@@ -52,3 +54,5 @@
     $font-Flaticon-smartphone-call: "\f104";
     $font-Flaticon-man-user: "\f105";
     $font-Flaticon-logout: "\f106";
+    $font-Flaticon-pdf-file-format-symbol: "\f107";
+    $font-Flaticon-download: "\f108";
