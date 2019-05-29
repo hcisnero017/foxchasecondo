@@ -15,75 +15,11 @@ we create digital solutions that makes it easy to realize the essence of your bu
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,900" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/show-nav.js"></script>
   </head>
   <body>
-    <header>
-      <div class="header-bar">
-        <div class="header-bar-content container">
-          <div class="profile-info">
-            <p>Jose Romero</p>
-            <p>My Profile</p>
-            <p>Log Out</p>
-          </div>
-        </div>
-      </div>
-      <nav>
-        <div class="nav-content container">
-          <div class="logo">
-            <img src="images/logo.png" alt="Fox Chase Logo">
-          </div>
-          <div class="nav-links">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="amenities.html">Amenities</a></li>
-              <li>Documents</li>
-              <li>Upcoming Events</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
-          <div class="mobile-menu">
-            <i class="flaticon-menu"></i>
-            <p>Menu</p>
-          </div>
-          <div class="site-menu">
-            <div class="site-menu-content">
-              <div class="close-menu">
-                <i class="flaticon-cancel"></i>
-              </div>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="amenities.html">Amenities</a></li>
-                <li>Documents</li>
-                <li>Upcoming Events</li>
-                <li>Contact Us</li>
-              </ul>
-              <div class="my-account">
-                <p>My Account</p>
-                <div>
-                  <i class="flaticon-man-user"></i>
-                  <span>My Profile</span>
-                </div>
-                <div>
-                  <i class="flaticon-logout"></i>
-                  <span>Logout</span>
-                </div>
-              </div>
-              <div class="site-menu-info">
-                <p>More Information</p>
-                <div>
-                  <i class="flaticon-phone-receiver"></i>
-                  <span><a href="tel:3052643644">305.264.3644</a></span>
-                </div>
-                <div>
-                  <i class="flaticon-maps-and-flags"></i>
-                  <span>8605 NW 8th St, Miami, FL 33126</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <?php include 'header.php'; ?>
     <div class="contact">
       <div class="contact-content container">
         <div class="section-title">
@@ -93,7 +29,7 @@ we create digital solutions that makes it easy to realize the essence of your bu
         <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14371.066379257423!2d-80.3350835!3d25.7782719!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x89fc23488e10dfa9!2sFox+Chase+Condominium!5e0!3m2!1sen!2sus!4v1557878828379!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-        <form class="" action="" method="post">
+        <form class="" action="send.php" method="post">
           <div class="form-name">
             <label>Full Name:</label>
             <input type="text" name="full-name" value="" placeholder="John Doe">
@@ -101,7 +37,7 @@ we create digital solutions that makes it easy to realize the essence of your bu
           <div class="phone-email">
             <div>
               <label>Phone Number:</label>
-              <input type="text" name="phone-number" value="" placeholder="(000) 000-0000" maxlength="10">
+              <input type="text" name="phone" value="" placeholder="(000) 000-0000" maxlength="10">
             </div>
             <div>
               <label>Email Address:</label>
@@ -116,15 +52,10 @@ we create digital solutions that makes it easy to realize the essence of your bu
             <label>Message:</label>
             <textarea name="message"></textarea>
           </div>
-          <button>Send Message</button>
+          <input type="submit" name="send" value="Send Message">
         </form>
       </div>
     </div>
-    <footer>
-      <div class="footer-copyright center container">
-        <p>&copy; 2019 Fox Chase Condominium. All Rights Reserved.</p>
-        <span>Powered by: <a href="https://exclusiveuxdesigns.com/" target="_blank">Exclusive UX Designs, LLC</a></span>
-      </div>
-    </footer>
+    <?php include 'footer.php'; ?>
   </body>
 </html>

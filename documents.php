@@ -15,83 +15,16 @@ we create digital solutions that makes it easy to realize the essence of your bu
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,900" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/show-nav.js"></script>
   </head>
   <body>
-    <header>
-      <div class="header-bar">
-        <div class="header-bar-content container">
-          <div class="profile-info">
-            <p>Jose Romero</p>
-            <p>My Profile</p>
-            <p>Log Out</p>
-          </div>
-        </div>
-      </div>
-      <nav>
-        <div class="nav-content container">
-          <div class="logo">
-            <img src="images/logo.png" alt="Fox Chase Logo">
-          </div>
-          <div class="nav-links">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="amenities.html">Amenities</a></li>
-              <li>Documents</li>
-              <li>Upcoming Events</li>
-              <li>Contact Us</li>
-              <div class="login-btn">
-                <p>Login</p>
-              </div>
-            </ul>
-          </div>
-          <div class="mobile-menu">
-            <i class="flaticon-menu"></i>
-            <p>Menu</p>
-          </div>
-          <div class="site-menu">
-            <div class="site-menu-content">
-              <div class="close-menu">
-                <i class="flaticon-cancel"></i>
-              </div>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="amenities.html">Amenities</a></li>
-                <li>Documents</li>
-                <li>Upcoming Events</li>
-                <li>Contact Us</li>
-              </ul>
-              <div class="my-account">
-                <p>My Account</p>
-                <div>
-                  <i class="flaticon-man-user"></i>
-                  <span>My Profile</span>
-                </div>
-                <div>
-                  <i class="flaticon-logout"></i>
-                  <span>Logout</span>
-                </div>
-              </div>
-              <div class="site-menu-info">
-                <p>More Information</p>
-                <div>
-                  <i class="flaticon-phone-receiver"></i>
-                  <span><a href="tel:3052643644">305.264.3644</a></span>
-                </div>
-                <div>
-                  <i class="flaticon-maps-and-flags"></i>
-                  <span>8605 NW 8th St, Miami, FL 33126</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <?php include 'header.php'; ?>
     <div class="documents">
       <div class="documents-content container">
         <div class="section-title">
           <h3>Documents & Applications</h3>
-          <p>Please contact us for any suggestions you may have!</p>
+          <p>All documents of the Fox Chase Condominium Association in one place.</p>
         </div>
         <div class="pdf-doc">
           <div class="sub-section-title">
@@ -135,22 +68,27 @@ we create digital solutions that makes it easy to realize the essence of your bu
           <div class="pdf-files">
             <div>
               <i class="flaticon-pdf-file-format-symbol"></i>
-              <p>Summary of the association's annual meeting. - (May, 2019)</p>
+              <p>Summary of the association's annual meeting | Spanish - (May, 2019)</p>
             </div>
             <div class="download-btn">
               <i class="flaticon-download"></i>
               <a href="files/summary-annual-meeting-2019-spanish.pdf" target="_blank"> <p>Download Document</p></a>
             </div>
           </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Summary of the association's annual meeting | English - (May, 2019)</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/summary-annual-meeting-2019-english.pdf" target="_blank"> <p>Download Document</p></a>
+            </div>
+          </div>
           </div>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="footer-copyright center container">
-        <p>&copy; 2019 Fox Chase Condominium. All Rights Reserved.</p>
-        <span>Powered by: <a href="https://exclusiveuxdesigns.com/" target="_blank">Exclusive UX Designs, LLC</a></span>
-      </div>
-    </footer>
+    <?php include 'footer.php'; ?>
   </body>
 </html>

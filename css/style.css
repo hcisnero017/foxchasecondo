@@ -18,8 +18,13 @@ body{
 	position:relative;
 	z-index:0;
 }
+.show{
+	position: fixed;
+	top: 0;
+}
 .mobile-menu,
-.site-menu{
+.site-menu,
+.mobile-nav{
 	display: none;
 }
 .container{
@@ -56,6 +61,7 @@ text-align: center;
 	padding: 5px;
 }
 header .header-bar{
+	display: none;
 	color: white;
 	background: #545454;
 	width: 100%;
@@ -146,6 +152,7 @@ header nav .nav-content .nav-links ul li:hover::before{
 	transition: ease-in-out .2s;
 }
 header nav .nav-content .nav-links .login-btn{
+	display: none;
 	font-family: 'Montserrat', sans-serif;
 	font-size: .8em;
 	background: #f96731;
@@ -158,17 +165,38 @@ header nav .nav-content .nav-links .login-btn{
 	border-radius: 20px;
 	cursor: pointer;
 }
-header .slider{
+.slider{
 	position: relative;
+	background: url("../images/slide.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
 	width: 100%;
 	height: 800px;
 	overflow: hidden;
 	z-index: 1;
 }
-header .slider img{
-	width: 100%;
+.slider .slider-content{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+.slider .slider-content p{
+	font-size: 3em;
+	width: 40%;
+	background: white;
+	padding: 10px 30px;
+}
+.slider .slider-content span{
+	font-size: 3.5em;
 	display: block;
-	height: auto;
+	margin-top: 10px;
+	font-weight: 800;
+	color: #f96731;
+	background: white;
+	padding: 20px 40px;
 }
 .amenities{
 	width: 100%;
@@ -235,7 +263,8 @@ header .slider img{
 	text-transform: uppercase;
 	font-weight: bold;
 	cursor: pointer;
-}.documents .documents-content .pdf-doc .pdf-files .download-btn a{
+}
+.documents .documents-content .pdf-doc .pdf-files .download-btn a{
 	color: #545454;
 	text-decoration: none;
 }
@@ -299,12 +328,12 @@ header .slider img{
 	resize: none;
 	color: #545454;
 }
-.contact .contact-content form button{
+.contact .contact-content form input[type="submit"]{
+	width: 12%;
 	background: #545454;
 	text-transform: uppercase;
 	font-size: .85em;
-	padding: 0 30px;
-		font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	height: 45px;
 	color: #fff;
 	cursor: pointer;
@@ -316,18 +345,51 @@ header .slider img{
 	font-weight: 700;
 	outline: 0;
 	border: 2px solid #545454;
+	padding-left: 0;
 }
-.contact .contact-content form button:hover{
+.contact .contact-content form input[type="submit"]:hover{
 	background: white;
 	color: #545454;
 }
 .contact .contact-content .map{
 	margin-bottom: 50px;
 }
+.confirmation{
+	width: 100%;
+	padding: 50px 0;
+	text-align: center;
+}
+.confirmation p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2em;
+}
+.confirmation button{
+	background: #f96731;
+	text-transform: uppercase;
+	font-size: .85em;
+	padding: 0 30px;
+	font-family: 'Montserrat', sans-serif;
+	height: 40px;
+	margin-top: 15px;
+	color: #fff;
+	cursor: pointer;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	letter-spacing: 1px;
+	overflow: hidden;
+	border-radius: 30px;
+	font-weight: 700;
+	outline: 0;
+	border: 0;
+}
+.confirmation button:hover{
+	background: #545454;
+	color: white;
+}
 footer{
 	width: 100%;
 	height: 80px;
-	background: #454545;
+	background: #383838;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	display: flex;
@@ -365,12 +427,40 @@ footer .footer-copyright span{
 	header .header-bar{
 		display: none;
 	}
-	header .slider{
+	.slider{
 		position: relative;
+		background: url("../images/slide.jpg") no-repeat;
+		background-position: right;
+		background-size: cover;
 		width: 100%;
-		height: auto;
+		height: 600px;
 		overflow: hidden;
 		z-index: 1;
+	}
+	.slider .slider-content{
+		width: 90%;
+		position: absolute;
+		left: 50%;
+		top: 80%;
+		transform: translate(-50%, -50%);
+		font-family: 'Montserrat', sans-serif;
+		text-transform: uppercase;
+		box-sizing: border-box;
+	}
+	.slider .slider-content p{
+		width: 50%;
+		font-size: 1.4em;
+		background: white;
+		padding: 10px 20px;
+	}
+	.slider .slider-content span{
+		font-size: 1.4em;
+		display: block;
+		margin-top: 10px;
+		font-weight: 800;
+		color: #f96731;
+		background: white;
+		padding: 20px;
 	}
 	.mobile-menu{
 		display: block;
@@ -431,6 +521,9 @@ footer .footer-copyright span{
 		font-size: 1.2em;
 		font-weight: bold;
 	}
+	.site-menu .site-menu-content .my-account{
+		display: none;
+	}
 	.site-menu .site-menu-content .site-menu-info,
 	.site-menu .site-menu-content .my-account{
 		padding: 20px 30px;
@@ -477,5 +570,43 @@ footer .footer-copyright span{
 	}
 	.amenities .amenities-content .amenities-modules .amenities-block:last-child{
 		margin-bottom: 0;
+	}
+	.confirmation{
+		width: 100%;
+		padding: 50px 20px;
+		text-align: center;
+	}
+	.contact .contact-content form input[type="submit"]{
+		width: 50%;
+		background: #545454;
+		text-transform: uppercase;
+		font-size: .85em;
+		font-family: 'Montserrat', sans-serif;
+		height: 45px;
+		color: #fff;
+		cursor: pointer;
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+		letter-spacing: 1px;
+		overflow: hidden;
+		border-radius: 30px;
+		font-weight: 700;
+		outline: 0;
+		border: 2px solid #545454;
+		padding-left: 0;
+	}
+	.documents .documents-content .pdf-doc .pdf-files{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 25px;
+	}
+	.documents .documents-content .pdf-doc .pdf-files .download-btn{
+		margin-top: 10px;
+		color: #f96731;
+	}
+	.documents .documents-content .pdf-doc .pdf-files .download-btn a{
+		color: #f96731;
 	}
 }
