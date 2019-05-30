@@ -60,6 +60,16 @@ we create digital solutions that makes it easy to realize the essence of your bu
               <a href="files/POA/b1/265-FS-2019-03-Mar.pdf" target="_blank"><p>Download Document</p></a>
             </div>
           </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - April, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/b1/265-FS-2019-04-Apr.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
         </div>
         <div class="pdf-doc">
           <div class="sub-section-title">
@@ -95,6 +105,16 @@ we create digital solutions that makes it easy to realize the essence of your bu
               <a href="files/POA/b2/266-FS-2019-03-Mar.pdf" target="_blank"><p>Download Document</p></a>
             </div>
           </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - April, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/b2/266-FS-2019-04-Apr.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
         </div>
         <div class="pdf-doc">
           <div class="sub-section-title">
@@ -128,6 +148,16 @@ we create digital solutions that makes it easy to realize the essence of your bu
             <div class="download-btn">
               <i class="flaticon-download"></i>
               <a href="files/POA/b3/267-FS-2019-03-Mar.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - April, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/b3/267-FS-2019-04-Apr.pdf" target="_blank"><p>Download Document</p></a>
             </div>
           </div>
         </div>

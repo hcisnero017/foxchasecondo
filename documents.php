@@ -85,6 +85,26 @@ we create digital solutions that makes it easy to realize the essence of your bu
               <a href="files/summary-annual-meeting-2019-english.pdf" target="_blank"> <p>Download Document</p></a>
             </div>
           </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Election Monitor Report - Fox Chase  No. 1 - Election of Directors (May, 2019)</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/ElectionMonitorReport-FoxChaseNo.1-ElectionofDirectors.pdf" target="_blank"> <p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Election Monitor Report - Fox Chase  No. 1- Election of Representative (May, 2019)</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/ElectionMonitorReport-FoxChase No.1-ElectionofRepresentative.pdf" target="_blank"> <p>Download Document</p></a>
+            </div>
+          </div>
           </div>
         </div>
       </div>

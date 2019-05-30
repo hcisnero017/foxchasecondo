@@ -29,6 +29,25 @@ we create digital solutions that makes it easy to realize the essence of your bu
         <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14371.066379257423!2d-80.3350835!3d25.7782719!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x89fc23488e10dfa9!2sFox+Chase+Condominium!5e0!3m2!1sen!2sus!4v1557878828379!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
+        <div class="contact-info">
+          <div class="contact-info-content">
+            <div class="info-box">
+              <i class="flaticon-manager-avatar"></i>
+              <span>Jose Romero</span>
+              <p>Manager</p>
+            </div>
+            <div class="info-box">
+              <i class="flaticon-telephone"></i>
+              <span>305.264.3644</span>
+              <p>Office Number</p>
+            </div>
+            <div class="info-box">
+              <i class="flaticon-message"></i>
+              <span>manager@foxchasecondoassociation.com</span>
+              <p>Email Address</p>
+            </div>
+          </div>
+        </div>
         <form class="" action="send.php" method="post">
           <div class="form-name">
             <label>Full Name:</label>

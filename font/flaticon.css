@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 22/05/2019 22:16
+  	Creation date: 30/05/2019 00:42
   	*/
 
 @font-face {
@@ -39,3 +39,6 @@ margin-left: 0;
 .flaticon-logout:before { content: "\f106"; }
 .flaticon-pdf-file-format-symbol:before { content: "\f107"; }
 .flaticon-download:before { content: "\f108"; }
+.flaticon-manager-avatar:before { content: "\f109"; }
+.flaticon-message:before { content: "\f10a"; }
+.flaticon-telephone:before { content: "\f10b"; }

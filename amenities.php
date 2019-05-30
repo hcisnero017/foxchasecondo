@@ -31,21 +31,14 @@ we create digital solutions that makes it easy to realize the essence of your bu
             <img src="images/pool.jpg" alt="Pool">
             <div class="amenities-info">
               <p>Pool</p>
-              <span>Tennis courts are located by the clubhouse and can be reserved inside!</span>
-            </div>
-          </div>
-          <div class="amenities-block">
-            <img src="images/clubhouse.jpg" alt="Club House">
-            <div class="amenities-info">
-              <p>Club House</p>
-              <span>Tennis courts are located by the clubhouse and can be reserved inside!</span>
+              <span>Enjoy cooling off in our pool while soaking up the sun!</span>
             </div>
           </div>
           <div class="amenities-block">
             <img src="images/tennis.jpg" alt="Tennis Court">
             <div class="amenities-info">
               <p>Tennis Court</p>
-              <span>Tennis courts are located by the clubhouse and can be reserved inside!</span>
+              <span>Get active with friends and family in our tennis courts!</span>
             </div>
           </div>
         </div>

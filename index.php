@@ -21,10 +21,10 @@ we create digital solutions that makes it easy to realize the essence of your bu
   <body>
     <?php include 'header.php'; ?>
     <div class="slider">
-      <div class="slider-content">
+        <!-- <div class="slider-content">
         <p>Welcome to</p>
         <span>Fox Chase Condominium</span>
-      </div>
+      </div> -->
     </div>
     <?php include 'footer.php'; ?>
   </body>
