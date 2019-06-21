@@ -28,7 +28,7 @@ body{
 	display: none;
 }
 .container{
-	max-width: 1400px !important;
+	max-width: 1200px !important;
 	margin: 0 auto;
 }
 .center{
@@ -275,6 +275,23 @@ header nav .nav-content .nav-links .login-btn{
 	text-decoration: underline;
 	color: #f96731
 }
+.events{
+	width: 100%;
+	padding: 50px 0;
+}
+.events .events-content .event-list .event-box{
+	line-height: 25px;
+}
+.events .events-content .event-list .event-box span{
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	font-size: 1.2em;
+	color: #545454;
+	border-bottom: 1px solid #545454;
+	margin-bottom: 20px;
+	font-weight: bold;
+	padding: 5px;
+}
 .contact{
 	width: 100%;
 	padding: 50px 0;
@@ -309,7 +326,7 @@ header nav .nav-content .nav-links .login-btn{
 	display: block;
 	margin-top: 5px;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.1em;
+	font-size: 1em;
 	font-weight: bold;
 }
 .contact .contact-content form input{
@@ -446,6 +463,18 @@ footer .footer-copyright span{
 	font-weight: bold;
 }
 
+@media screen and (max-width: 1366px){
+	.slider{
+		position: relative;
+		background: url("../images/slide.jpg") no-repeat;
+		background-position: right;
+		background-size: cover;
+		width: 100%;
+		height: 600px;
+		overflow: hidden;
+		z-index: 1;
+	}
+}
 @media screen and (max-width: 768px){
 	.container{
 		padding: 0 20px;

@@ -20,7 +20,7 @@
           <li><a href="documents.php">Documents</a></li>
           <li><a href="accounting.php">POA Financials</a></li>
           <li><a href="https://www.pmhcpas.com/onlineoffice.asp">Online Account</a></li>
-          <li><a href="events.php">Upcoming Events</a></li>
+          <li><a href="events.php">Events</a></li>
           <li><a href="contact.php">Contact Us</a></li>
         </ul>
       </div>
