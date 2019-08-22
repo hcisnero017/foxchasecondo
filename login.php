@@ -7,7 +7,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Welcome to Fox Chase Condominium Association">
-    <title>Amenities | Fox Chase Condominium Association</title>
+    <title>Login | Fox Chase Condominium Association</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="font/flaticon.css">
@@ -23,28 +23,32 @@
   </head>
   <body>
     <?php include 'header.php'; ?>
-    <div class="amenities">
-      <div class="amenities-content container">
-        <div class="section-title">
-          <h3>Our Amenities</h3>
-          <p>From pools to tennis courts, we offer a variety of wonderful ammenities here at Fox Chase!</p>
-        </div>
-        <div class="amenities-modules">
-          <div class="amenities-block">
-            <img src="images/pool.jpg" alt="Pool">
-            <div class="amenities-info">
-              <p>Pool</p>
-              <span>Enjoy cooling off in our pool while soaking up the sun!</span>
+    <div class="login">
+      <div class="login-content container">
+        <form method="post" action="login.php" id="login_form">
+
+          <img src="images/logo.png" alt="Fox Chase Logo">
+          <h1>Please enter your credentials to be able to check all documents and events of our association.</h1>
+
+          <?php if(count($errors) > 0): ?>
+            <div class="alert-danger">
+              <?php foreach ($errors as $error): ?>
+                <li><?php echo $error; ?></li>
+              <?php endforeach; ?>
+            </div>
+          <?php endif; ?>
+
+          <label for="username">Username or email:</label>
+          <input type="text" name="username" value="<?php echo $username; ?>" placeholder="Username">
+          <label for="password">Password:</label>
+          <input type="password" name="password" placeholder="Password">
+          <div class="form-footer">
+            <input type="submit" name="login-btn" value="Login">
+            <div class="sign-up">
+              <p>Don't have an account? <a href="sign-up.php">Register here</a> </p>
             </div>
           </div>
-          <div class="amenities-block">
-            <img src="images/tennis.jpg" alt="Tennis Court">
-            <div class="amenities-info">
-              <p>Tennis Court</p>
-              <span>Get active with friends and family in our tennis courts!</span>
-            </div>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
     <?php include 'footer.php'; ?>

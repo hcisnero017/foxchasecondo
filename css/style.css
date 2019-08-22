@@ -18,6 +18,121 @@ body{
 	position:relative;
 	z-index:0;
 }
+.alert-danger{
+	font-family: 'Muli', sans-serif;
+	width: 100%;
+	background: #f2d2d6;
+	border: 2px solid #ebbdc3;
+	color: #611b22;
+	padding: 20px !important;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+	border-radius: 5px;
+}
+.alert-danger li{
+	line-height: 25px;
+}
+.alert-success{
+	font-family: 'Muli', sans-serif;
+	width: 100%;
+	background: #d3ebd5;
+	border: 2px solid #b9dfbc;
+	color: #244f1f;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}
+.login{
+	width: 100%;
+	padding: 100px 0;
+}
+.login .login-content{
+	display: flex;
+	justify-content: center;
+}
+#login_form a{
+	color: #ff5e14;
+	text-decoration: underline;
+}
+#login_form label{
+	font-family: 'Muli', sans-serif;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
+#login_form{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+#login_form img{
+	display: block;
+	width: 200px;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+#login_form h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.1em;
+	text-align: center;
+	margin-bottom: 20px;
+	line-height: 25px;
+}
+#login_form input{
+	width: 100%;
+	height: 45px;
+	padding-left: 20px;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid #dadada;
+	box-sizing: border-box;
+	outline: none;
+	color: #545454;
+	background: white;
+	margin-bottom: 15px;
+}
+#login_form input[type="submit"]{
+	width: 40%;
+	background: #545454;
+	text-transform: uppercase;
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+	height: 45px;
+	font-weight: bold;
+	border-radius: 30px;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	letter-spacing: 1px;
+	overflow: hidden;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+#login_form input[type="submit"]:hover{
+	color: #545454;
+	background: white;
+	border: 2px solid #545454;
+}
+#login_form>p{
+	font-family: 'Montserrat', sans-serif;
+	color: #f73838;
+	text-align: center;
+	line-height: 25px;
+}
+#login_form .form-footer{
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+#login_form .sign-up{
+	font-family: 'Muli', sans-serif;
+}
 .show{
 	position: fixed;
 	top: 0;
@@ -26,6 +141,27 @@ body{
 .site-menu,
 .mobile-nav{
 	display: none;
+}
+.download-btn{
+	font-family: 'Montserrat', sans-serif;
+	font-size: .7em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+.download-btn a{
+	color: #545454;
+	text-decoration: none;
+}
+.download-btn:hover{
+	color: #f96731;
+}
+.download-btn:hover a{
+	text-decoration: underline;
+	color: #f96731;
 }
 .container{
 	max-width: 1200px !important;
@@ -60,16 +196,105 @@ text-align: center;
 	font-weight: bold;
 	padding: 5px;
 }
+.registration{
+	width: 100%;
+	padding: 100px 0;
+}
+.registration .registration-content{
+	display: flex;
+	justify-content: center;
+}
+.registration .registration-content form{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.registration .registration-content form h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.1em;
+	text-align: center;
+	margin-bottom: 20px;
+	line-height: 25px;
+}
+.registration .registration-content form p{
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 20px;
+}
+.registration .registration-content form label{
+	font-family: 'Muli', sans-serif;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
+.registration .registration-content form input,
+.registration .registration-content form select{
+	width: 100%;
+	height: 45px;
+	padding-left: 20px;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	border-radius: 5px;
+	border: 1px solid #dadada;
+	outline: none;
+	color: #545454;
+	background: white;
+	margin-bottom: 15px;
+}
+.registration .registration-content form .password,
+.registration .registration-content form .bld-apt{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.registration .registration-content form .password .pass1,
+.registration .registration-content form .password .pass2{
+	width: 47%;
+}
+.registration .registration-content form .password .pass1 input,
+.registration .registration-content form .password .pass2 input{
+	width: 100%;
+}
+.registration .registration-content form .bld-apt .building,
+.registration .registration-content form .bld-apt .apt{
+	width: 47%;
+}
+.registration .registration-content form .bld-apt .building select,
+.registration .registration-content form .bld-apt .apt input{
+	width: 100%;
+}
+.registration .registration-content form input[type="submit"]{
+	width: 40%;
+	background: #545454;
+	text-transform: uppercase;
+	font-size: .85em;
+	font-family: 'Montserrat', sans-serif;
+	height: 45px;
+	color: #fff;
+	cursor: pointer;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	letter-spacing: 1px;
+	overflow: hidden;
+	border-radius: 30px;
+	font-weight: 700;
+	outline: 0;
+	border: 2px solid #545454;
+	padding-left: 0;
+	margin: 0 auto;
+}
+.registration .registration-content form input[type="submit"]:hover{
+	background: white;
+	color: #545454;
+}
 header .header-bar{
-	display: none;
+	display: block;
 	color: white;
 	background: #545454;
 	width: 100%;
 	height: 50px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-size: .9em;
 	line-height: 50px;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 }
 header .header-bar .header-bar-content .profile-info{
@@ -79,11 +304,29 @@ header .header-bar .header-bar-content .profile-info{
 	align-items: center;
 }
 header .header-bar .header-bar-content .profile-info p{
-	padding-left: 40px;
-	cursor: pointer;
+	padding-left: 20px;
 }
 header .header-bar .header-bar-content .profile-info a:hover{
 	text-decoration: underline;
+}
+header .header-bar .header-bar-content .profile-info .logout{
+	background: #f96731;
+	border: 2px solid #f96731;
+	padding: 10px 20px;
+	border: 0;
+	margin-left: 20px;
+	color: white;
+	font-family: 'Muli', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: .9em;
+	transition: ease-in-out .2s;
+	cursor: pointer;
+	outline: none;
+}
+header .header-bar .header-bar-content .profile-info .logout:hover{
+	background: white;
+	color: #f96731;
 }
 header nav{
 	position: relative;
@@ -245,7 +488,6 @@ header nav .nav-content .nav-links .login-btn{
 	margin-bottom: 15px;
 }
 .documents .documents-content .pdf-doc .pdf-files div{
-	font-size: .9em;
 	display: flex;
 	align-items: center;
 }
@@ -256,31 +498,13 @@ header nav .nav-content .nav-links .login-btn{
 	font-size: 1.1em;
 	margin-left: 10px;
 }
-.documents .documents-content .pdf-doc .pdf-files .download-btn{
-	font-family: 'Montserrat', sans-serif;
-	font-size: .7em;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	font-weight: bold;
-	cursor: pointer;
-}
-.documents .documents-content .pdf-doc .pdf-files .download-btn a{
-	color: #545454;
-	text-decoration: none;
-}
-.documents .documents-content .pdf-doc .pdf-files .download-btn:hover{
-	color: #f96731;
-}
-.documents .documents-content .pdf-doc .pdf-files .download-btn:hover a{
-	text-decoration: underline;
-	color: #f96731
-}
 .events{
 	width: 100%;
-	padding: 50px 0;
+	padding: 0;
 }
 .events .events-content .event-list .event-box{
 	line-height: 25px;
+	margin-bottom: 40px;
 }
 .events .events-content .event-list .event-box span{
 	font-family: 'Montserrat', sans-serif;
@@ -291,6 +515,15 @@ header nav .nav-content .nav-links .login-btn{
 	margin-bottom: 20px;
 	font-weight: bold;
 	padding: 5px;
+}
+.events .events-content .event-list .event-box .event-pdf{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.events .events-content .event-list .event-box .event-pdf .download-btn p{
+	font-size: 1.1em;
+	margin-left: 10px;
 }
 .contact{
 	width: 100%;
@@ -379,7 +612,7 @@ header nav .nav-content .nav-links .login-btn{
 	color: #545454;
 }
 .contact .contact-content form input[type="submit"]{
-	width: 12%;
+	width: 20%;
 	background: #545454;
 	text-transform: uppercase;
 	font-size: .85em;
@@ -436,6 +669,22 @@ header nav .nav-content .nav-links .login-btn{
 	background: #545454;
 	color: white;
 }
+.private{
+	width: 100%;
+	padding: 50px 0;
+}
+.private .private-content img{
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	height: 180px;
+}
+.private .private-content p{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 1.4em;
+	font-family: 'Muli', sans-serif;
+}
 footer{
 	width: 100%;
 	height: 80px;
@@ -488,6 +737,16 @@ footer .footer-copyright span{
 	}
 	header .header-bar{
 		display: none;
+	}
+	.login{
+		width: 100%;
+		padding: 100px 10px;
+		box-sizing: border-box;
+	}
+	#login_form{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
 	}
 	.slider{
 		position: relative;
@@ -586,11 +845,26 @@ footer .footer-copyright span{
 		font-weight: bold;
 	}
 	.site-menu .site-menu-content .my-account{
-		display: none;
+		display: block;
 	}
 	.site-menu .site-menu-content .site-menu-info,
 	.site-menu .site-menu-content .my-account{
 		padding: 20px 30px;
+	}
+	.site-menu .site-menu-content .my-account .logout{
+		background: #f96731;
+		border: 2px solid #f96731;
+		padding: 10px 20px;
+		border: 0;
+		margin-top: 15px;
+		color: white;
+		font-family: 'Muli', sans-serif;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: .9em;
+		transition: ease-in-out .2s;
+		cursor: pointer;
+		outline: none;
 	}
 	.site-menu .site-menu-content .site-menu-info p,
 	.site-menu .site-menu-content .my-account p{
@@ -697,5 +971,83 @@ footer .footer-copyright span{
 	}
 	.documents .documents-content .pdf-doc .pdf-files .download-btn a{
 		color: #f96731;
+	}
+	.registration{
+		width: 100%;
+		padding: 100px 10px;
+		box-sizing: border-box;
+	}
+	.registration .registration-content{
+		display: flex;
+		justify-content: center;
+	}
+	.registration .registration-content form{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.registration .registration-content form input,
+	.registration .registration-content form select{
+		width: 100%;
+		height: 45px;
+		padding-left: 15px;
+		font-family: 'Montserrat', sans-serif;
+		box-sizing: border-box;
+		border-radius: 5px;
+		border: 1px solid #dadada;
+		outline: none;
+		color: #545454;
+		background: white;
+		margin-bottom: 15px;
+	}
+	.registration .registration-content form .password,
+	.registration .registration-content form .bld-apt{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.registration .registration-content form .bld-apt{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	.registration .registration-content form .password .pass1,
+	.registration .registration-content form .password .pass2{
+		width: 100%;
+	}
+	.registration .registration-content form input[type="submit"]{
+		width: 60%;
+		background: #545454;
+		text-transform: uppercase;
+		font-size: .85em;
+		font-family: 'Montserrat', sans-serif;
+		height: 45px;
+		color: #fff;
+		cursor: pointer;
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+		letter-spacing: 1px;
+		overflow: hidden;
+		border-radius: 30px;
+		font-weight: 700;
+		outline: 0;
+		border: 2px solid #545454;
+		padding-left: 0;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	#login_form .form-footer{
+		font-family: 'Muli', sans-serif;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 10px;
+	}
+	#login_form .sign-up{
+		font-family: 'Muli', sans-serif;
+		margin-top: 20px;
 	}
 }

@@ -1,10 +1,13 @@
+<?php
+  require_once 'controllers/authController.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="At Exclusive UX Designs,
-we create digital solutions that makes it easy to realize the essence of your business within a little time.">
-    <title>Fox Chase Condominium Association</title>
+    <meta name="description" content="Welcome to Fox Chase Condominium Association">
+    <title>Contact | Fox Chase Condominium Association</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="font/flaticon.css">

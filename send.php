@@ -16,7 +16,7 @@ $message_info .= "Sent: " . date('F d, Y', time()) . " \r\n";
 $message_info .= "Why are you contacting us?: " . $_POST['reason'] . " \r\n" . " \r\n";
 $message_info .= "Message: " . $_POST['message'] . " \r\n";
 
-$to = 'romerovivero@yahoo.com';
+$to = 'manager@foxchasecondoassociation.com';
 $topic = 'Fox Chase Condominium - Contact Page';
 
 mail($to, $topic, utf8_decode($message_info), $header);

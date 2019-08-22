@@ -1,10 +1,13 @@
+<?php
+  require_once 'controllers/authController.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="At Exclusive UX Designs,
-we create digital solutions that makes it easy to realize the essence of your business within a little time.">
-    <title>Fox Chase Condominium Association</title>
+    <meta name="description" content="Welcome to Fox Chase Condominium Association">
+    <title>Accounting | Fox Chase Condominium Association</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="font/flaticon.css">
@@ -19,12 +22,83 @@ we create digital solutions that makes it easy to realize the essence of your bu
     <script type="text/javascript" src="js/show-nav.js"></script>
   </head>
   <body>
+    <?php
+      if($_SESSION['id']==true){
+      } else {
+        header('location: login.php');
+      }
+    ?>
     <?php include 'header.php'; ?>
     <div class="documents">
       <div class="documents-content container">
         <div class="section-title">
           <h3>Prepared Financial Statements</h3>
           <p>All documents of the Fox Chase Condominium Association in one place.</p>
+        </div>
+        <div class="pdf-doc">
+          <div class="sub-section-title">
+            <p>Prepared Financial Statements - POA</p>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - January, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/Financial-POA-January-2019.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - Febraury, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/Financial-POA-Febraury-2019.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - March, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/Financial-POA-March-2019.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - April, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/Financial-POA-April-2019.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - May, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/b1/265-FS-2019-05-May.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - Jun, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/Financial-POA-June-2019.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
         </div>
         <div class="pdf-doc">
           <div class="sub-section-title">
@@ -78,6 +152,16 @@ we create digital solutions that makes it easy to realize the essence of your bu
             <div class="download-btn">
               <i class="flaticon-download"></i>
               <a href="files/POA/b1/265-FS-2019-05-May.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - Jun, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/b1/265-FS-2019-06-Jun.pdf" target="_blank"><p>Download Document</p></a>
             </div>
           </div>
         </div>
@@ -135,6 +219,16 @@ we create digital solutions that makes it easy to realize the essence of your bu
               <a href="files/POA/b2/266-FS-2019-05-May.pdf" target="_blank"><p>Download Document</p></a>
             </div>
           </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - Jun, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/b2/266-FS-2019-06-Jun.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
         </div>
         <div class="pdf-doc">
           <div class="sub-section-title">
@@ -188,6 +282,61 @@ we create digital solutions that makes it easy to realize the essence of your bu
             <div class="download-btn">
               <i class="flaticon-download"></i>
               <a href="files/POA/b3/267-FS-2019-05-May.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - Jun, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/b3/267-FS-2019-06-Jun.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="pdf-doc">
+          <div class="sub-section-title">
+            <p>Year Ended Financial Statements - December 31, 2018</p>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Year Ended Financial Statements</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/Year-Ended-Financial-Statements-POA.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Year Ended Financial Statements - No. 1</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/Year-Ended-Financial-Statements-No1.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Year Ended Financial Statements - No. 2</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/Year-Ended-Financial-Statements-No2.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Year Ended Financial Statements - No. 3</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/Year-Ended-Financial-Statements-No3.pdf" target="_blank"><p>Download Document</p></a>
             </div>
           </div>
         </div>

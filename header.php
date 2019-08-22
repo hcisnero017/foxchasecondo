@@ -1,10 +1,19 @@
+<?php
+  require_once 'controllers/authController.php';
+?>
+
 <header>
   <div class="header-bar">
     <div class="header-bar-content container">
       <div class="profile-info">
-        <p>Jose Romero</p>
-        <p>My Profile</p>
-        <p>Log Out</p>
+        <p>
+          <?php
+            if($_SESSION['id']==true){
+              echo "Welcome, "."<strong>".$_SESSION['email']."</strong>";
+              echo '<a href="index.php?logout=1"><button class="logout">Logout</button></a>';
+            }
+          ?>
+        </p>
       </div>
     </div>
   </div>
@@ -44,14 +53,12 @@
           </ul>
           <div class="my-account">
             <p>My Account</p>
-            <div>
-              <i class="flaticon-man-user"></i>
-              <span>My Profile</span>
-            </div>
-            <div>
-              <i class="flaticon-logout"></i>
-              <span>Logout</span>
-            </div>
+            <?php
+              if($_SESSION['id']==true){
+                echo "Welcome, "."<strong>".$_SESSION['email']."</strong>";
+                echo '<br><a href="index.php?logout=1"><button class="logout">Logout</button></a>';
+              }
+            ?>
           </div>
           <div class="site-menu-info">
             <p>More Information</p>

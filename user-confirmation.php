@@ -1,13 +1,9 @@
-<?php
-  require_once 'controllers/authController.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Welcome to Fox Chase Condominium Association">
-    <title>Amenities | Fox Chase Condominium Association</title>
+    <title>User Confirmation | Fox Chase Condominium Association</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="font/flaticon.css">
@@ -23,28 +19,10 @@
   </head>
   <body>
     <?php include 'header.php'; ?>
-    <div class="amenities">
-      <div class="amenities-content container">
-        <div class="section-title">
-          <h3>Our Amenities</h3>
-          <p>From pools to tennis courts, we offer a variety of wonderful ammenities here at Fox Chase!</p>
-        </div>
-        <div class="amenities-modules">
-          <div class="amenities-block">
-            <img src="images/pool.jpg" alt="Pool">
-            <div class="amenities-info">
-              <p>Pool</p>
-              <span>Enjoy cooling off in our pool while soaking up the sun!</span>
-            </div>
-          </div>
-          <div class="amenities-block">
-            <img src="images/tennis.jpg" alt="Tennis Court">
-            <div class="amenities-info">
-              <p>Tennis Court</p>
-              <span>Get active with friends and family in our tennis courts!</span>
-            </div>
-          </div>
-        </div>
+    <div class="private">
+      <div class="private-content container">
+        <img src="images/done.png" alt="Success">
+        <p>Congratulations! Your account has been successfully created.<br> Now, you have access to documents, events and more.</p>
       </div>
     </div>
     <?php include 'footer.php'; ?>

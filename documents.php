@@ -1,10 +1,13 @@
+<?php
+  require_once 'controllers/authController.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="At Exclusive UX Designs,
-we create digital solutions that makes it easy to realize the essence of your business within a little time.">
-    <title>Fox Chase Condominium Association</title>
+    <meta name="description" content="Welcome to Fox Chase Condominium Association">
+    <title>Documents | Fox Chase Condominium Association</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="font/flaticon.css">
@@ -19,6 +22,12 @@ we create digital solutions that makes it easy to realize the essence of your bu
     <script type="text/javascript" src="js/show-nav.js"></script>
   </head>
   <body>
+    <?php
+      if($_SESSION['id']==true){
+      } else {
+        header('location: login.php');
+      }
+    ?>
     <?php include 'header.php'; ?>
     <div class="documents">
       <div class="documents-content container">
@@ -29,6 +38,16 @@ we create digital solutions that makes it easy to realize the essence of your bu
         <div class="pdf-doc">
           <div class="sub-section-title">
             <p>Certification of Amendments of Declaration of Condominium</p>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Fox Chase Condominium Association, Inc. - Recorded Governing Documents</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/Fox-Chase-Property-Owners-Association.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
           </div>
           <div class="pdf-files">
             <div>
@@ -63,48 +82,27 @@ we create digital solutions that makes it easy to realize the essence of your bu
         </div>
         <div class="pdf-doc">
           <div class="sub-section-title">
-            <p>Annual Meetings</p>
+            <p>Service Contracts</p>
           </div>
           <div class="pdf-files">
             <div>
               <i class="flaticon-pdf-file-format-symbol"></i>
-              <p>Summary of the association's annual meeting | Spanish - (May, 2019)</p>
+              <p>Better Waste Management - Service Agreement</p>
             </div>
             <div class="download-btn">
               <i class="flaticon-download"></i>
-              <a href="files/summary-annual-meeting-2019-spanish.pdf" target="_blank"> <p>Download Document</p></a>
-            </div>
-          </div>
-          <div class="pdf-files">
-            <div>
-              <i class="flaticon-pdf-file-format-symbol"></i>
-              <p>Summary of the association's annual meeting | English - (May, 2019)</p>
-            </div>
-            <div class="download-btn">
-              <i class="flaticon-download"></i>
-              <a href="files/summary-annual-meeting-2019-english.pdf" target="_blank"> <p>Download Document</p></a>
+              <a href="files/Better-Waste-Management-Service-Agreement.pdf" target="_blank"> <p>Download Document</p></a>
             </div>
           </div>
           <div class="pdf-files">
             <div>
               <i class="flaticon-pdf-file-format-symbol"></i>
-              <p>Election Monitor Report - Fox Chase  No. 1 - Election of Directors (May, 2019)</p>
+              <p>Laundry Space Lease Agreement</p>
             </div>
             <div class="download-btn">
               <i class="flaticon-download"></i>
-              <a href="files/ElectionMonitorReport-FoxChaseNo.1-ElectionofDirectors.pdf" target="_blank"> <p>Download Document</p></a>
+              <a href="files/Laundry-Space-Lease-Agreement.pdf" target="_blank"> <p>Download Document</p></a>
             </div>
-          </div>
-          <div class="pdf-files">
-            <div>
-              <i class="flaticon-pdf-file-format-symbol"></i>
-              <p>Election Monitor Report - Fox Chase  No. 1- Election of Representative (May, 2019)</p>
-            </div>
-            <div class="download-btn">
-              <i class="flaticon-download"></i>
-              <a href="files/ElectionMonitorReport-FoxChase No.1-ElectionofRepresentative.pdf" target="_blank"> <p>Download Document</p></a>
-            </div>
-          </div>
           </div>
         </div>
       </div>
