@@ -99,6 +99,16 @@
               <a href="files/POA/Financial-POA-June-2019.pdf" target="_blank"><p>Download Document</p></a>
             </div>
           </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - Jul, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/Financial-POA-July-2019.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
         </div>
         <div class="pdf-doc">
           <div class="sub-section-title">
@@ -162,6 +172,16 @@
             <div class="download-btn">
               <i class="flaticon-download"></i>
               <a href="files/POA/b1/265-FS-2019-06-Jun.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - Jul, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/b1/265-FS-2019-07-Jul.pdf" target="_blank"><p>Download Document</p></a>
             </div>
           </div>
         </div>
@@ -229,6 +249,16 @@
               <a href="files/POA/b2/266-FS-2019-06-Jun.pdf" target="_blank"><p>Download Document</p></a>
             </div>
           </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - Jul, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/b2/266-FS-2019-07-Jul.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
         </div>
         <div class="pdf-doc">
           <div class="sub-section-title">
@@ -292,6 +322,16 @@
             <div class="download-btn">
               <i class="flaticon-download"></i>
               <a href="files/POA/b3/267-FS-2019-06-Jun.pdf" target="_blank"><p>Download Document</p></a>
+            </div>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Prepared Financial Statements - Jul, 2019</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/POA/b3/267-FS-2019-07-Jul.pdf" target="_blank"><p>Download Document</p></a>
             </div>
           </div>
         </div>

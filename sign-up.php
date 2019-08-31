@@ -67,7 +67,7 @@
               <input type="text" name="apt" value="">
             </div>
           </div>
-          <p>All field mark (*) are required</p>
+          <p>All field marked with an (*) are required</p>
           <input type="submit" name="signup-btn" value="Register">
         </form>
       </div>
