@@ -98,6 +98,16 @@
                 </div>
               </div>
             </div>
+            <div class="event-box">
+              <span>October 16, 2019</span>
+              <div class="event-pdf">
+                <p>Board of Directors Meeting</p>
+                <div class="download-btn">
+                  <i class="flaticon-download"></i>
+                  <a href="files/Agenda-Budget-2020.pdf" target="_blank"><p>Download Document</p></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

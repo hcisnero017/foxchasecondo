@@ -13,6 +13,7 @@ $header .= "Content-Type: text/plain";
 $message_info = "This message was sent by: " . $name . " \r\n";
 $message_info .= "Phone Number: " . $phone . " \r\n";
 $message_info .= "Sent: " . date('F d, Y', time()) . " \r\n";
+$message_info .= "Email: " . $_POST['email'] . " \r\n";
 $message_info .= "Why are you contacting us?: " . $_POST['reason'] . " \r\n" . " \r\n";
 $message_info .= "Message: " . $_POST['message'] . " \r\n";
 

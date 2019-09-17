@@ -82,6 +82,21 @@
         </div>
         <div class="pdf-doc">
           <div class="sub-section-title">
+            <p>Rules and Regulations - 1994</p>
+          </div>
+          <div class="pdf-files">
+            <div>
+              <i class="flaticon-pdf-file-format-symbol"></i>
+              <p>Rules and Regulations</p>
+            </div>
+            <div class="download-btn">
+              <i class="flaticon-download"></i>
+              <a href="files/Rules-Regulations.pdf" target="_blank"> <p>Download Document</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="pdf-doc">
+          <div class="sub-section-title">
             <p>Service Contracts</p>
           </div>
           <div class="pdf-files">

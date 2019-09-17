@@ -1,5 +1,23 @@
 <?php
+
   require_once 'controllers/authController.php';
+
+  define('SITE_KEY', '6Lf4-7gUAAAAAKAY6xs8qNZHicOiZjixq6ZTaQ4s');
+  define('SECRET_KEY', '6Lf4-7gUAAAAAO3QD0kbZhzKFHXRwTGgy9QxZNQs');
+  if($_POST){
+      function getCaptcha($SecretKey){
+          $Response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".SECRET_KEY."&response={$SecretKey}");
+          $Return = json_decode($Response);
+          return $Return;
+      }
+      $Return = getCaptcha($_POST['g-recaptcha-response']);
+      //var_dump($Return);
+      if($Return->success == true && $Return->score > 0.5){
+          echo "Success!";
+      }else{
+          echo "You are a Robot!!";
+      }
+  }
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +37,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,900" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js?render=<?php echo SITE_KEY; ?>'></script>
     <script type="text/javascript" src="js/show-nav.js"></script>
   </head>
   <body>
@@ -70,6 +89,7 @@
             <label>Why are you contacting us?</label>
             <input type="text" name="reason" value="" placeholder="Tell us your reason...">
           </div>
+          <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />
           <div class="form-reason">
             <label>Message:</label>
             <textarea name="message"></textarea>
@@ -79,5 +99,16 @@
       </div>
     </div>
     <?php include 'footer.php'; ?>
+
+    <script>
+      grecaptcha.ready(function() {
+      grecaptcha.execute('<?php echo SITE_KEY; ?>', {action: 'homepage'})
+      .then(function(token) {
+          //console.log(token);
+          document.getElementById('g-recaptcha-response').value=token;
+      });
+      });
+    </script>
+
   </body>
 </html>
